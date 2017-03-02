@@ -57,7 +57,7 @@ Client Options:
         'itemValueSelector' => 'span',
         'templates' => [
             'pickerItem' => '<div class="demo-item-class"><span></span></div>',
-            'search' => '<input type="search" class="form-control iconpicker-search" placeholder="Type to filter" />'
+            'search' => '<input type="search" class="form-control picker-search" placeholder="Type to filter" />'
         ]
         ...
         // more see https://itsjavi.com/bootstrap-popover-picker/
