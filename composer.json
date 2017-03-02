@@ -1,0 +1,21 @@
+{
+    "name": "dominus77/yii2-bootstrap-popover-picker",
+    "description": "Renders a Bootstrap Popover Picker widget for Yii2.",
+    "type": "yii2-extension",
+    "keywords": ["dominus77","yii2","extension","widget","bootstrap","popover","picker"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Alexey Shevchenko",
+            "email": "ivanovosity@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "dominus77\\popoverpicker\\": ""
+        }
+    }
+}
