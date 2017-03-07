@@ -69,6 +69,10 @@ Further Information
 -----
 Please, check the [Bootstrap Popover Picker](https://itsjavi.com/bootstrap-popover-picker/)
 
+Other questions
+-----
+To see what has changed in recent versions, see the [CHANGELOG.md](https://github.com/Dominus77/yii2-bootstrap-popover-picker/blob/master/CHANGELOG.md)
+
 License
 -----
 The BSD License (BSD). Please see [License File](https://github.com/Dominus77/yii2-bootstrap-popover-picker/blob/master/LICENSE.md) for more information.
