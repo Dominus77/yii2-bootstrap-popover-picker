@@ -10,7 +10,7 @@ use yii\web\AssetBundle;
  */
 class PopoverPickerAsset extends AssetBundle
 {
-    public static $publishPath = '@dominus77/popoverpicker/assets/src';
+    public static $publishPath = '@vendor/dominus77/popoverpicker/assets/src';
 
     public $sourcePath;
 
@@ -20,7 +20,7 @@ class PopoverPickerAsset extends AssetBundle
 
     public function init()
     {
-        $this->sourcePath = self::$publishPath;
+        $this->sourcePath = __DIR__ . '/src';
         $min = YII_ENV_DEV ? '' : '.min';
         $this->css[] = 'css/bootstrap-picker' . $min . '.css';
         $this->css[] = 'style.css';
