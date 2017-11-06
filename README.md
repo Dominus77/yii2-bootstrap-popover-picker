@@ -60,7 +60,7 @@ Client Options:
             'search' => '<input type="search" class="form-control picker-search" placeholder="Type to filter" />'
         ]
         ...
-        // more see https://itsjavi.com/bootstrap-popover-picker/
+        // more see https://farbelous.github.io/bootstrap-popover-picker/
     ],
 ]); ?>
 ```
