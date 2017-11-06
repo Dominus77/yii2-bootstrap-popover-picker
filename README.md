@@ -1,6 +1,6 @@
 README
 ======
-Renders a [Bootstrap Popover Picker](https://itsjavi.com/bootstrap-popover-picker/) widget for Yii2. 
+Renders a [Bootstrap Popover Picker](https://farbelous.github.io/bootstrap-popover-picker/) widget for Yii2.
 
 Installation
 ------------
@@ -67,7 +67,7 @@ Client Options:
 
 Further Information
 -----
-Please, check the [Bootstrap Popover Picker](https://itsjavi.com/bootstrap-popover-picker/)
+Please, check the [Bootstrap Popover Picker](https://farbelous.github.io/bootstrap-popover-picker/)
 
 Other questions
 -----
