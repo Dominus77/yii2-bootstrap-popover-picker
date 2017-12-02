@@ -10,8 +10,6 @@ use yii\web\AssetBundle;
  */
 class PopoverPickerAsset extends AssetBundle
 {
-    public static $publishPath = '@vendor/dominus77/popoverpicker/assets/src';
-
     public $sourcePath;
 
     public $css = [];
@@ -24,11 +22,12 @@ class PopoverPickerAsset extends AssetBundle
         $min = YII_ENV_DEV ? '' : '.min';
         $this->css[] = 'css/bootstrap-picker' . $min . '.css';
         $this->css[] = 'style.css';
+        $this->js[] = 'js/jquery-migrate-3.0.0.js';
         $this->js[] = 'js/bootstrap-picker' . $min . '.js';
     }
 
     public $depends = [
-        'yii\web\YiiAsset',
+        'yii\web\JqueryAsset',
         'yii\bootstrap\BootstrapAsset',
     ];
 }
