@@ -41,6 +41,10 @@ use dominus77\popoverpicker\PopoverPicker;
 Client Options:
 
 ```php
+use dominus77\popoverpicker\DemoAsset;
+
+DemoAsset::register($this);
+
 <?= $form->field($model, 'popover')->widget(PopoverPicker::className(), [
     'clientOptions' => [
         'title' => 'Bootstrap Popover Picker', // Popover title (optional) only if specified in the template
@@ -67,11 +71,7 @@ Client Options:
 
 Further Information
 -----
-Please, check the [Bootstrap Popover Picker](https://farbelous.github.io/bootstrap-popover-picker/)
-
-Other questions
------
-To see what has changed in recent versions, see the [CHANGELOG.md](https://github.com/Dominus77/yii2-bootstrap-popover-picker/blob/master/CHANGELOG.md)
+Please, check the [Bootstrap Popover Picker](https://github.com/farbelous/bootstrap-popover-picker)
 
 License
 -----

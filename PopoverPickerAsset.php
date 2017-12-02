@@ -1,12 +1,12 @@
 <?php
 
-namespace dominus77\popoverpicker\assets;
+namespace dominus77\popoverpicker;
 
 use yii\web\AssetBundle;
 
 /**
  * Class PopoverPickerAsset
- * @package dominus77\popoverpicker\assets
+ * @package dominus77\popoverpicker
  */
 class PopoverPickerAsset extends AssetBundle
 {
@@ -18,16 +18,15 @@ class PopoverPickerAsset extends AssetBundle
 
     public function init()
     {
-        $this->sourcePath = __DIR__ . '/src';
+        $this->sourcePath = '@bower/bootstrap-popover-picker/dist';
         $min = YII_ENV_DEV ? '' : '.min';
         $this->css[] = 'css/bootstrap-picker' . $min . '.css';
-        $this->css[] = 'style.css';
-        $this->js[] = 'js/jquery-migrate-3.0.0.js';
         $this->js[] = 'js/bootstrap-picker' . $min . '.js';
     }
 
     public $depends = [
         'yii\web\JqueryAsset',
+        'dominus77\popoverpicker\jQueryMigrateAsset',
         'yii\bootstrap\BootstrapAsset',
     ];
 }
