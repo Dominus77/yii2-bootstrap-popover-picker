@@ -41,9 +41,11 @@ use dominus77\popoverpicker\PopoverPicker;
 Client Options:
 
 ```php
+<?php
 use dominus77\popoverpicker\DemoAsset;
 
 DemoAsset::register($this);
+?>
 
 <?= $form->field($model, 'popover')->widget(PopoverPicker::className(), [
     'clientOptions' => [
