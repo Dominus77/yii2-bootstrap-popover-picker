@@ -1,9 +1,12 @@
-README
-======
+# yii2-bootstrap-popover-picker
+
+[![Latest Stable Version](https://poser.pugx.org/dominus77/yii2-bootstrap-popover-picker/v/stable)](https://packagist.org/packages/dominus77/yii2-bootstrap-popover-picker)
+[![License](https://poser.pugx.org/dominus77/yii2-bootstrap-popover-picker/license)](https://github.com/Dominus77/yii2-bootstrap-popover-picker/blob/master/LICENSE.md)
+[![Total Downloads](https://poser.pugx.org/dominus77/yii2-bootstrap-popover-picker/downloads)](https://packagist.org/packages/dominus77/yii2-bootstrap-popover-picker)
+
 Renders a [Bootstrap Popover Picker](https://farbelous.github.io/bootstrap-popover-picker/) widget for Yii2.
 
-Installation
-------------
+## Installation
 
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
@@ -21,9 +24,7 @@ or add
 
 to the require section of your `composer.json` file.
 
-
-Usage
------
+## Usage
 
 Once the extension is installed, simply use it in your code by  :
 
@@ -71,10 +72,8 @@ DemoAsset::register($this);
 ]); ?>
 ```
 
-Further Information
------
+## Further Information
 Please, check the [Bootstrap Popover Picker](https://github.com/farbelous/bootstrap-popover-picker)
 
-License
------
+## License
 The BSD License (BSD). Please see [License File](https://github.com/Dominus77/yii2-bootstrap-popover-picker/blob/master/LICENSE.md) for more information.

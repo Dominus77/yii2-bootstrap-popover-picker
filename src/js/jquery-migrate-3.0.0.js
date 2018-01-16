@@ -5,9 +5,7 @@
 (function (jQuery, window) {
     "use strict";
 
-
     jQuery.migrateVersion = "3.0.0";
-
 
     (function () {
 
@@ -34,8 +32,8 @@
 
         // Show a message on the console so devs know we're active
         log("JQMIGRATE: Migrate is installed" +
-        ( jQuery.migrateMute ? "" : " with logging active" ) +
-        ", version " + jQuery.migrateVersion);
+            ( jQuery.migrateMute ? "" : " with logging active" ) +
+            ", version " + jQuery.migrateVersion);
 
     })();
 
@@ -85,7 +83,6 @@
         // JQuery has never supported or tested Quirks Mode
         migrateWarn("jQuery is not compatible with Quirks Mode");
     }
-
 
     var oldInit = jQuery.fn.init,
         oldIsNumeric = jQuery.isNumeric,
@@ -140,7 +137,7 @@
         return oldFind.apply(this, args);
     };
 
-// Copy properties attached to original jQuery.find method (e.g. .attr, .isXML)
+    // Copy properties attached to original jQuery.find method (e.g. .attr, .isXML)
     var findProp;
     for (findProp in oldFind) {
         if (Object.prototype.hasOwnProperty.call(oldFind, findProp)) {
@@ -148,7 +145,7 @@
         }
     }
 
-// The number of elements contained in the matched element set
+    // The number of elements contained in the matched element set
     jQuery.fn.size = function () {
         migrateWarn("jQuery.fn.size() is deprecated; use the .length property");
         return this.length;
@@ -180,7 +177,7 @@
     migrateWarnProp(jQuery, "unique", jQuery.uniqueSort,
         "jQuery.unique is deprecated, use jQuery.uniqueSort");
 
-// Now jQuery.expr.pseudos is the standard incantation
+    // Now jQuery.expr.pseudos is the standard incantation
     migrateWarnProp(jQuery.expr, "filters", jQuery.expr.pseudos,
         "jQuery.expr.filters is now jQuery.expr.pseudos");
     migrateWarnProp(jQuery.expr, ":", jQuery.expr.pseudos,
@@ -204,7 +201,6 @@
 
         return jQXHR;
     };
-
 
     var oldRemoveAttr = jQuery.fn.removeAttr,
         oldToggleClass = jQuery.fn.toggleClass,
@@ -254,10 +250,9 @@
         });
     };
 
-
     var internalSwapCall = false;
 
-// If this version of jQuery has .swap(), don't false-alarm on internal uses
+    // If this version of jQuery has .swap(), don't false-alarm on internal uses
     if (jQuery.swap) {
         jQuery.each(["height", "width", "reliableMarginRight"], function (_, name) {
             var oldHook = jQuery.cssHooks[name] && jQuery.cssHooks[name].get;
@@ -402,7 +397,7 @@
 
     });
 
-// Trigger "ready" event only once, on document ready
+    // Trigger "ready" event only once, on document ready
     jQuery(function () {
         jQuery(document).triggerHandler("ready");
     });
@@ -437,7 +432,6 @@
         }
     });
 
-
     var oldOffset = jQuery.fn.offset;
 
     jQuery.fn.offset = function () {
@@ -459,7 +453,6 @@
         return oldOffset.apply(this, arguments);
     };
 
-
     var oldParam = jQuery.param;
 
     jQuery.param = function (data, traditional) {
@@ -480,7 +473,6 @@
         migrateWarn("jQuery.fn.andSelf() replaced by jQuery.fn.addBack()");
         return oldSelf.apply(this, arguments);
     };
-
 
     var oldDeferred = jQuery.Deferred,
         tuples = [
@@ -536,6 +528,5 @@
 
         return deferred;
     };
-
 
 })(jQuery, window);

@@ -10,15 +10,28 @@ use yii\web\AssetBundle;
  */
 class DemoAsset extends AssetBundle
 {
+    /**
+     * @var string
+     */
     public $sourcePath;
+
+    /**
+     * @var array
+     */
     public $css = [];
 
+    /**
+     * @inheritdoc
+     */
     public function init()
     {
         $this->sourcePath = __DIR__ . '/src';
         $this->css[] = 'css/style.css';
     }
 
+    /**
+     * @var array
+     */
     public $depends = [
         'dominus77\popoverpicker\PopoverPickerAsset',
     ];

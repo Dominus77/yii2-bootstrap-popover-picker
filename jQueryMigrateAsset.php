@@ -10,15 +10,28 @@ use yii\web\AssetBundle;
  */
 class jQueryMigrateAsset extends AssetBundle
 {
+    /**
+     * @var string
+     */
     public $sourcePath;
+
+    /**
+     * @var array
+     */
     public $js = [];
 
+    /**
+     * @inheritdoc
+     */
     public function init()
     {
         $this->sourcePath = __DIR__ . '/src';
         $this->js[] = 'js/jquery-migrate-3.0.0.js';
     }
 
+    /**
+     * @var array
+     */
     public $depends = [
         'yii\web\JqueryAsset',
     ];
